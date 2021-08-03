@@ -66,6 +66,13 @@ public class OrderItem implements Serializable {
 		id.setProduct(product);
 	}
 	
+	//Soma Preço Produtos
+	
+	public Double getSubtotal() {
+		return price*quantity;
+	}
+	
+	
 
 	@Override
 	public int hashCode() {
